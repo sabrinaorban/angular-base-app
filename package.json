@@ -1,0 +1,15 @@
+{
+  "name": "superdyne",
+  "version": "1.0.0",
+  "description": "To run the project, just hit this command on your terminal",
+  "main": "app.js",
+  "dependencies": {
+    "angular-ui-router": "^0.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sabrina orban",
+  "license": "ISC"
+}

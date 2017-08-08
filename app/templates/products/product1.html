@@ -1,0 +1,188 @@
+<div class="products">
+    <section class="section section-hero" preload-bg-image="assets/img/product-hero.jpg" default-image="assets/img/product-hero.jpg" fallback-image="assets/img/product-hro.jpg">
+    <div class="container">
+        <h1 class="h1">Products</h1>
+    </div>
+    <div class="overlay"></div>
+        
+    </section>
+    <div class="scroll">
+        <div class="helper"><nav class="nav-products">
+ 
+            <ul>
+                <li><a href="" data-ui-sref="product1" data-ng-class="{ active: isActive('/closed-microfluidic-chip?tab=overview') }"> Gochujang tumeric</a></li>
+            </ul>
+        </nav>
+    </div>
+        
+    </div>
+    <section class="product-details">
+        <div class="container">
+            <div data-tabs-wrapper class="">
+                    <div class="flex-container tabs-container">
+                        <div class="flex-item side-menu">
+                            <!-- Tabs menu on the left side of the product page -->
+                            <div class="tabs-header">
+                                <ul class="tabs-view" data-tab-set data-ng-class="selectedTab" data-tab-change-handler="tabSelectedHandler">
+                                    <li><a data-tabul="overview" class="tab" data-default-tab="overview" data-ng-class="{'active': tabs.overview.active}">Overview</a></li>
+                                    <li><a data-tabul="specifications" class="tab" data-default-tab="specifications" data-ng-class="{'active': tabs.specifications.active}">Specifications</a></li>
+                                    <li><a data-tabul="download" class="tab" data-default-tab="download" data-ng-class="{'active': tabs.download.active}">Download</a></li>
+                                    <li><a data-tabul="order" class="tab" data-default-tab="order" data-ng-class="{'active': tabs.order.active}">Order</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Tabs content -->
+                        <div class="tabs-content">
+                            <!-- Tab OVERVIEW -->
+                        <div class="tab tab-product-overview" data-ng-if="tabs.overview.active">
+                            <div class="top-ctn">
+                                <h2 class="h2">The problem</h2>
+                                <p>Bresaola pastrami pork belly short loin. Rump bresaola burgdoggen, turkey andouille meatloaf capicola pork loin sausage pork belly pastrami cow pork chop shankle. Corned beef tail short ribs jowl, pork chop shoulder porchetta tenderloin pastrami chuck flank hamburger drumstick beef ribs bresaola.</p>
+                                <ul>
+
+
+                                    <li>Banh mi bushwick celiac adipisicing nostrud raclette occupy austin dolore. XOXO fanny pack semiotics yr before they sold out occaecat. Godard sint dolore twee authentic sunt pinterest tacos hoodie food truck</li>
+                                    <li>Celiac twee in poke. Kombucha listicle stumptown iPhone, irony four dollar toast exercitation biodiesel gochujang pariatur echo park marfa ad lomo. </li>
+                                    <li>Stumptown tofu artisan sustainable sunt franzen vexillologist magna chicharrones veniam shoreditch 90's hashtag taiyaki.</li>
+                                </ul>
+                            </div>
+                            <div class="bottom-ctn">
+                                <h2 class="h2">Our solution</h2>
+                                <p>Church-key literally aute, excepteur godard whatever raclette ethical meditation cliche 90's lumbersexual chartreuse poke occaecat. Chia vegan vape ad roof party pariatur meggings. Cred schlitz pinterest ex yr copper mug.</p>
+                                <ul>
+                                    <li>Freegan consectetur pinterest officia biodiesel lyft cardigan jean shorts next level occupy microdosing eiusmod pop-up tbh.</li>
+
+                                    <li>Cape small batch semiotics drinking vinegar migas. Forage dolore next level jianbing lo-fi YOLO incididunt narwhal mlkshk tattooed. </li>
+
+                                    <li>Pickled duis esse, iPhone pariatur chia four dollar toast chillwave freegan marfa cred coloring book commodo sartorial.</li>
+                                </ul>
+
+                                <div class="image-container">
+                                    <img src="assets/img/1.png" />
+                                </div>
+                                <div class="image-container">
+                                    <img src="assets/img/2.png" />
+                                </div>
+
+                               
+                            </div>
+                        </div>
+                        <!-- Tab SPECIFICATION -->
+                        <div class="tab tab-product-specifications" data-ng-if="tabs.specifications.active">
+    
+                            <table class="product-specs" id="productSpecs">
+                                <thead>
+                                    <!--Table Header -->
+                                        <th></th>
+                                        <th>S Size</th>
+                                        <th>M Size</th>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>Availability</td>
+                                        <td>Summer 2017</td>
+                                        <td>Fall 2017</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dimensions</td>
+                                        <td>75 mmm x 75mm</td>
+                                        <td>150 mm x 150mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thickness (excl. tubes)</td>
+                                        <td>3 mm</td>
+                                        <td>3 mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bioprocessing Liquid volume</td>
+                                        <td>80 µL</td>
+                                        <td>320 µL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Culture surface</td>
+                                        <td>8 cm²</td>
+                                        <td>32 cm²</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Material</td>
+                                        <td>COC</td>
+                                        <td></td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td>Cell types supported</td>
+                                        <td>Adherent, Non-adherent, Colonies</td>
+                                        <td></td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td>In situ operations supported</td>
+                                        <td>Coating, seeding, washing, medium renewal, cell collection, freezing</td>
+                                        <td></td>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <td>Supported production steps</td>
+                                        <td>Amplification, transduction, differentiation, washing, conditioning, incubation, marking, freezing, thawing</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seeding flow speed</td>
+                                        <td>90 µL/min</td>
+                                        <td>360 µL/min</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shear rate during seeding</td>
+                                        <td>80Hz for all sizes</td>
+                                        <td></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Maximum shear rate in processing volume</td>
+                                        <td>&lt; 1Hz for all sizes</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rate of medium renewal</td>
+                                        <td>From 400 / day to 0.05 / day for all sizes</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Compatibility with hypoxia</td>
+                                        <td>Yes</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Share of processing volume accessible for imaging</td>
+                                        <td>&gt; 90%</td>
+                                        <td></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Tab DOWNLOAD -->
+                        <div class="tab tab-download" data-ng-if="tabs.download.active">
+                            <h2 class="h2">Download</h2>
+                            <a class="button btn-reversed" href="assets/download/pdf-ex.pdf" download="pdf-ex.pdf">Download Brochure</a>
+                        </div>
+
+                        <!-- Tab ORDER -->
+                        <div class="tab tab-order" data-ng-if="tabs.order.active">
+                            <h2 class="h2">Order</h2>
+                            <p>Please contact us for inquiries and orders!</p>
+                            <a class="button btn-reversed" data-ui-sref="contact">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>                     
+        </div>
+    </section>
+    <section class="section section-image-bg">
+        <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa</p>-->
+    </section>
+    
+</div>

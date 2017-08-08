@@ -1,0 +1,68 @@
+<div class="contact">
+    <section class="section section-hero" preload-bg-image="assets/img/contact-hero-img.jpg" default-image="assets/img/contact-hero-img.jpg" fallback-image="assets/img/contact-hero-img.jpg">
+        <h1 class="h1">Contact us</h1>
+        <div class="overlay"></div>
+       
+    </section>
+ 
+    <section class="section section-contact-form">
+        <div class="container-fullWidth">
+            <div class="flex-container">
+                <div class="flex-item contact-form-container">
+                    <form action="" role="form" data-ng-submit="submit(contactForm)" method="post" class="contact-form" name="contactForm" id="contactForm" novalidate>
+                        <p class="bold">If you have any enquiries or would like to order, please leave us a message below.</p>
+                        <fieldset>
+                            <div class="flex-container">
+                                <div class="flex-item input-container" data-ng-class="{'error': contactForm.fullName.$pristine && submitted &&!sent}">
+                                    <label for="fullName">Full name</label>
+                                    <input data-ng-model="formData.fullName" class="float-label text-input" type="text" name="fullName" required>
+                                    <p ng-show="contactForm.fullName.$pristine && submitted" class="help-text">Name is required.</p>
+                                </div>
+                                <div class="flex-item input-container" data-ng-class="{'error': contactForm.company.$pristine && submitted &&!sent}">
+                                    <label for="company">Company</label>
+                                    <input data-ng-model="formData.company" class="float-label text-input" type="text" name="company" required>
+                                    <p ng-show="contactForm.company.$pristine && submitted" class="help-text">Company is required.</p>
+                                </div>
+                            </div>
+                            <div class="flex-container">
+                                <div class="flex-item input-container" data-ng-class="{'error': contactForm.phone.$pristine && submitted &&!sent}">
+                                    <label for="phone">Phone #</label>
+                                    <input international-phone-number data-ng-model="formData.phone" id="phone" class="float-label text-input" type="text" name="phone" required>
+                                    <p ng-show="contactForm.phone.$pristine && submitted" class="help-text">Phone is required.</p>
+                                </div>
+                                <div class="flex-item input-container" data-ng-class="{'error': contactForm.email.$invalid && !contactForm.email.$pristine || (contactForm.email.$pristine && submitted &&!sent)}">
+                                    <label for="email">Email</label>
+                                    <input data-ng-model="formData.email" class="float-label text-input" type="text" name="email" required>
+                                     <p data-ng-show="contactForm.email.$invalid && !contactForm.email.$pristine &&!sent" class="help-text">Enter a valid email.</p>
+                                    <p data-ng-show="contactForm.email.$pristine && submitted &&!sent" class="help-text">Email is required</p>
+                                </div>
+                            </div>
+                        
+                            <div class="input-container textarea-container" data-ng-class="{'error': contactForm.message.$pristine && submitted &&!sent}">
+                                <label for="message">Message</label>
+                                <textarea data-ng-model="formData.message" class="float-label" name="message" required></textarea>
+                                <p ng-show="contactForm.message.$pristine && submitted &&!sent" class="help-text">Message is required.</p>
+                            </div>
+                            <div class="flex-container bottom">
+                           
+                                <div class="button-container">
+                                    <button type="submit" class="button btn-reversed">Send</button>
+                                </div>
+                            </div>
+                            
+                            
+                        </fieldset>
+                    
+                        <p class="success" data-ng-show="resultMessage && sent">{{resultMessage}}</p>
+                        <p class="error" data-ng-show="resultMessage && !sent">{{resultMessage}}</p>
+                    </form>
+                    
+                </div>
+                <div class="flex-item map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198412.211531316!2d-100.56913235831202!3d38.47727036409698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87a31771717c016b%3A0x68c2b4a94b3e095f!2sKansas%2C+USA!5e0!3m2!1sen!2sro!4v1502126191903" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+</div>
